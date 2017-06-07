@@ -1,0 +1,18 @@
+
+<html>
+<head>
+<title>Socket.io Demo</title>
+</head>
+<body>
+<div id="tweets"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('/'),
+      tweets = document.getElementById('tweets');
+  socket.on('tweet', function (data) {
+    tweets.innerHTML = tweets.innerHTML + '<br>' + data;
+  });
+</script>
+</body>
+</html>

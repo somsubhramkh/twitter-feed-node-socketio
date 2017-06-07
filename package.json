@@ -1,0 +1,9 @@
+{
+  "name": "twitter-feed-example",
+  "version": "0.0.1",
+  "description": "This socket.io app will fetch twitter feed based on a particular keyword",
+  "dependencies": {
+    "socket.io": "^2.0.2",
+    "twitter": "^1.7.0"
+  }
+}
